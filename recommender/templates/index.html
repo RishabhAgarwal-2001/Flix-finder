@@ -80,6 +80,7 @@
             <th scope="col">#</th>
             <th scope="col">Title</th>
             <th scope="col">IMDB Rating</th>
+            <th scope="col">Rotten Tomato Rating</th>
             <th scope="col">Release Date</th>
         </thead>
         <tbody>
@@ -87,8 +88,9 @@
                 <tr>
                     <th scope="row">{{forloop.counter}}</th>
                     <th>{{movie.movie_title}}</th>
-                    <th>{{movie.rating}}</th>
-                    <th>{{movie.release_date.date}}</th>
+                    <th>{{movie.imdb_rating}}</th>
+                    <th>{{movie.rtm_rating}}</th>
+                    <th>{{movie.release_year}}</th>
                 </tr>
             {% endfor %}
         </tbody>
